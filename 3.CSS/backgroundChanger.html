@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Background Generator</title>
+    </head>
+    <style>
+        div {
+
+            text-align: center;
+        }
+
+        .range {
+            margin-top: 50px;
+        }
+
+    </style>
+    <script>
+    var randomArr = [];
+
+        function changeBackground() {
+            randomArr = [];
+            for (let i = 0; i < 3; i++) {
+                const getRandomNumber = Math.floor(Math.random() * 255);
+                randomArr.push(getRandomNumber);
+            }
+            this.addColor(randomArr,9);
+        }
+
+     function rangePicker(value){
+         console.log(value);
+         if(value >=10){
+             value = 9;
+         }
+         this.addColor(randomArr,value);
+
+     }
+
+     function addColor(randomArr,value){
+        document.querySelector("body").style.background = `rgba(${randomArr} ,0.${value})`;
+
+     }
+    </script>
+
+    <body>
+        <div class="range">
+            <button onclick="changeBackground()">Change</button>
+        </div>
+        <div class="range">
+            <input type="range" id="volume" onchange="rangePicker(value)" name="volume" min="0" max="11">
+        </div>
+    </body>
+
+</html>

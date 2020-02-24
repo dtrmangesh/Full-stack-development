@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Specificity in CSS</title>
+        <style>
+            body {
+                color: red;
+            }
+
+            pre {
+                color: green;
+            }
+
+            ul {
+                color: blue;
+            }
+
+            li {
+                color: brown !important;
+            }
+
+            #names {
+                color: black;
+            }
+
+            .name {
+                color: olive;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Reference for simplicity in <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity"> MDN</a>
+        </h1>
+        <pre>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet similique minus, non rerum,
+            reprehenderit, error quam alias magni libero quod voluptatibus? Ab mollitia cupiditate voluptate, aliquam
+            facere earum provident.</pre>
+
+        <ul>
+            <li class="name" id="names">Mangesh</li>
+            <li>Nachi</li>
+            <li class="name">Parmial</li>
+        </ul>
+
+        <h2>Specificity level's</h2>
+        <h3>
+            <pre style="color: black;">
+            level  0 - Type selector
+                li{
+
+                }
+                li a {
+
+                }
+                li + h3 {
+
+                }
+        </pre>
+        </h3>
+        <h3>
+            <pre style="color: black;">
+
+            level 1 - Class , Attributes , Pseudo class selectors
+                .name{
+
+                }
+                input[type="text"]{
+
+                }
+                button :hover{
+                    
+                }
+            </pre>
+        </h3>
+        <h3>
+            <pre style="color: black;">
+            level 2 - ID selectors
+
+                #surname{
+
+                }
+            </pre>
+        </h3>
+
+    </body>
+
+</html>
