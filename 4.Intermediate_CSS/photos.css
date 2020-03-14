@@ -1,0 +1,19 @@
+img{
+    width: 30%;
+    float: left;
+    margin: 1.5%;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+.author{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    margin-left: 2%;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    width: 30%;
+    box-shadow: 0 16px 59px;
+}

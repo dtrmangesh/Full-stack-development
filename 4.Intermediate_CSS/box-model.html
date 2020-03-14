@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Box Model in HTML</title>
+    </head>
+    <style>
+        p {
+            width: 50%;
+            /* border */
+            border: 1px solid red;
+
+            /* padding */
+            padding-left: 30px;
+
+            /* margin */
+            margin: 50px;
+        }
+
+        div {
+            background: #F3CDA5;
+            width: 50%;
+            height: 60px;
+            padding: 30px;
+
+        }
+
+        .container {
+            border: 1px solid red;
+            padding: 59px;
+            display: inline-flex;
+            height: 124px;
+        }
+
+        .padding {
+            background: #C9DDBB;
+
+        }
+
+        .element {
+            background: #A8C5E5;
+        }
+
+        .box-model {
+            width: 80%;
+        }
+
+    </style>
+
+    <body>
+        <p>1. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo officia eveniet cumque animi praesentium,
+            corporis eius sapiente saepe vel voluptas laborum earum dicta fugiat neque sunt exercitationem impedit nemo
+            explicabo.
+        </p>
+        <p>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum corporis accusamus consectetur fugiat aut
+            possimus, repellat ex velit recusandae incidunt fuga quo consequuntur veritatis voluptates suscipit aliquam
+            sequi, vitae sunt.
+        </p>
+
+
+        <div class="container">
+            <div class="padding">
+                padding
+            </div>
+            <div class="element">
+                element
+            </div>
+        </div>
+        <div class="box-model">
+            <img src="box-model.png" alt="">
+        </div>
+    </body>
+
+</html>

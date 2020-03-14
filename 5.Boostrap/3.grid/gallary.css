@@ -1,0 +1,22 @@
+.width {
+    width: 100%;
+}
+.capitalise{
+text-transform: capitalize;
+}
+.padding{
+    padding-top: 40px;
+}
+.jumbotron{
+    color: #2c3e50;
+}
+.navbar-inverse{
+   background-color: #2c3e50 !important;   
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white
+}
+button:focus{
+    outline: none;
+
+}
